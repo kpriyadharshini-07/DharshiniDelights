@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | DharshiniDelights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <a class="logo" href="index.html">Dharshini<span>Delights</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Your <span>Cart</span></h1>
+    <p>Review your items before checkout.</p>
+</section>
+
+<main class="cart-layout">
+    <section class="cart-panel">
+        <h2>Selected Items</h2>
+        <div id="cartItems"></div>
+    </section>
+
+    <section class="cart-panel">
+        <h2>Delivery Details</h2>
+        <form id="checkoutForm">
+            <label class="form-label" for="customerName">Full Name</label>
+            <input id="customerName" required placeholder="Enter your name">
+
+            <label class="form-label" for="customerPhone">Phone Number</label>
+            <input id="customerPhone" type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="10-digit phone number">
+
+            <label class="form-label" for="customerAddress">Delivery Address</label>
+            <textarea id="customerAddress" required rows="3" placeholder="Enter your full address"></textarea>
+
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+
+            <button class="btn" type="submit">Place Demo Order</button>
+        </form>
+        <p class="subtitle">Demo only. No real payment is collected.</p>
+    </section>
+</main>
+
+<footer><p>© 2026 DharshiniDelights</p></footer>
+</body>
+</html>

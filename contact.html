@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DharshiniDelights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <a class="logo" href="index.html">Dharshini<span>Delights</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Contact <span>Us</span></h1>
+    <p>We would love to hear from you!</p>
+</section>
+
+<section class="content-card">
+    <h2>Send Us a Message</h2>
+    <p>Have a question or suggestion? Use the form below.</p>
+
+    <form id="contactForm">
+        <label class="form-label" for="contactName">Your Name</label>
+        <input id="contactName" required placeholder="Enter your name">
+
+        <label class="form-label" for="contactEmail">Email Address</label>
+        <input id="contactEmail" type="email" required placeholder="Enter your email">
+
+        <label class="form-label" for="contactMessage">Message</label>
+        <textarea id="contactMessage" rows="5" required placeholder="Write your message"></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+    <p id="contactFeedback" role="status"></p>
+</section>
+
+<footer><p>© 2026 DharshiniDelights</p></footer>
+</body>
+</html>
